@@ -192,7 +192,7 @@ li:nth-child(1) {
 }
 
 li:not(:first-child):before {
-  content: "·"; /* Insert content that looks like bullets */
+  content: "·";
   color: #494e62;
   font-size: 12px;
   padding-right: 13px;
