@@ -1,0 +1,145 @@
+
+body, html {
+  widows: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: 'Lato', sans-serif;
+  width: 1020px;
+  margin-top: 10px;
+}
+
+.feed {
+  background-color: #f06c64;
+  height: 654px;
+  border-bottom: 6px #ea676b solid;
+  padding: 68px 40px;
+}
+
+.feed__main {
+  display: flex;
+}
+
+.feed-header {
+  display: flex-inline;
+  flex-direction: column;
+}
+
+.feed-header__title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-weight: 900;
+  margin-bottom: 26px;
+}
+
+.feed-header__text {
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-weight: 300;
+  text-align: justify;
+}
+
+ .feed-form {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 47px;
+} 
+
+.feed-form__input {
+  height: 38px;
+  margin-bottom: 16px;
+  background-color: #d6564f;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.feed-form__input_textarea {
+  height: 202px;
+}
+
+input::placeholder {
+  padding-left: 12px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ec7e7e;
+  text-shadow: 0 0;
+}
+
+textarea::placeholder {
+  padding-left: 12px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ec7e7e;
+  text-shadow: 0 0;
+  padding-left: 13px;
+  padding-top: 11px;
+}
+
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding-left: 19px;
+  padding-top: 41px;
+}
+
+.contact-info__title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  padding-top: 7px;
+  color: #f0d8d9;
+  margin-bottom: 9px;
+}
+
+
+.contact-info__text{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #f0d8d9;
+  text-align: justify;
+  text-shadow: 0 0;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
