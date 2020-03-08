@@ -15,12 +15,12 @@
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
         </div>
         <div class="feed__main">
-          <form class="feed-form">
-              <input class="feed-form__input" type="text" placeholder="Name (Required)">
-              <input class="feed-form__input" type="email" placeholder="Email (Required)">
+          <form class="feed-form" method="post">
+              <input class="feed-form__input" type="text" placeholder="Name (Required)" required>
+              <input class="feed-form__input" type="email" placeholder="Email (Required)" required>
               <input class="feed-form__input" type="text" placeholder="Subject">
               <textarea class="feed-form__input feed-form__input_textarea" placeholder="Describe your project in detail..."></textarea>
-              <button class="main-form__button-submit" type="submit">Submit</button>
+              <button class="feed-form__button-send" type="submit">Send</button>
           </form>
         <div class="contact-info">
           <h2 class="contact-info__title">Contact Information</h2>
@@ -47,7 +47,12 @@
         </div>
         <footer class="page__footer footer">
           <p class="footer__copyright copyright">© Copyright 2013</p>
-          <div class="footer__links links"></div>
+          <div class="footer__links links">
+            <a class="link link_facebook"></a>
+            <a class="link link_google"></a>
+            <a class="link link_twitter"></a>
+            <a class="link link_linkedin"></a>
+          </div>
         </footer>
       </div>
     </div>

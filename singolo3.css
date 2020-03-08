@@ -62,11 +62,21 @@ body, html {
   background-color: #d6564f;
   border-radius: 5px;
   border-color: transparent;
+  color: #f0d8d9;
 }
 
 .feed-form__input_textarea {
   height: 202px;
 }
+
+.feed-form__button-send {
+  width: 100px;
+  height: 30px;
+  background-color:#d6564f;
+  border-color: transparent;
+  color: white;
+}
+
 
 input::placeholder {
   padding-left: 12px;
@@ -167,7 +177,8 @@ textarea::placeholder {
 .footer {
   display: flex;
   align-items: center;
-  padding: 0 33px;
+  justify-content: space-between;
+  padding: 0px 33px 0 40px;
   height: 76px;
   background-color: #2d303a;
 }
@@ -175,8 +186,45 @@ textarea::placeholder {
 .copyright {
     color: #666d89;
     font-size: 12px;
-    margin-left: 9px;
 }
+
+
+
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin-right: 8px;
+}
+
+.link:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.link_facebook {
+  background-image: url("assets/social_media/Facebook.svg");
+  margin-right: 6px;
+}
+
+.link_google {
+  background-image: url("assets/social_media/Google.svg");
+}
+
+.link_twitter {
+  background-image: url("assets/social_media/Twitter.svg");
+}
+
+.link_linkedin {
+  background-image: url("assets/social_media/LinkedIn.svg");
+}
+
 
 
 @font-face {
