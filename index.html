@@ -6,26 +6,29 @@
       <link rel="stylesheet" href="singolo.css">
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="home">
       <header class='page__header header'>
           <h1 class="header__title header__title_uppercase">Singolo<span class="header__title_star">*</span></h1>
           <ul class="header__menu menu">
-            <li class="menu__item menu__item_active">HOME</li>
-            <li class="menu__item">SERVICES</li>
-            <li class="menu__item">PORTFOLIO</li>
-            <li class="menu__item">ABOUT</li>
-            <li class="menu__item">CONTACT</li>
+            <li class="menu__item"><a class="menu-link menu-link_active" href="#home">HOME</a></li>
+            <li class="menu__item"><a class="menu-link" href="#services">SERVICES</a></li>
+            <li class="menu__item"><a class="menu-link" href="#portfolio">PORTFOLIO</a></li>
+            <li class="menu__item"><a class="menu-link" href="#about">ABOUT</a></li>
+            <li class="menu__item"><a class="menu-link" href="#contact">CONTACT</a></li>
           </ul>
         </header>
         <div class="page__slider slider">
+          <div class="slider__content slider__content_current">
+            <img src="src/assets/iPhone Vertical.png" alt="iphone" class="iphone_vertical">
+            <img src="src/assets/iPhone Horizontal.png" alt="iphone" class="iphone_horizontal">
+          </div>
           <div class="slider__content">
-            <img src="assets/iPhone Vertical.png" alt="iphone" class="iphone_vertical">
-            <img src="assets/iPhone Horizontal.png" alt="iphone" class="iphone_horizontal">
+            <img src="src/assets/slider_second.jpg" alt="iphone">
           </div>
           <div class="slider__control slider__control_prev"></div>
           <div class="slider__control slider__control_next"></div>
         </div>
-        <article class="page__services services">
+        <article class="page__services services" id="services">
             <h1 class="services__title">Our Services</h1>
             <p class="services__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
               non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -33,7 +36,7 @@
           </section>
           <div class="service-elements">
             <section class="services__element element">
-              <img class="element__picture" src="assets/Pen.png" alt="pen"/>
+              <img class="element__picture" src="src/assets/Pen.png" alt="pen"/>
               <div class="element__info element-content">
                 <div class="element-content__title">Custom Design</div>
                 <div class="element-content__info">Curabitur vestibulum eget mauris quis laoreet.
@@ -41,7 +44,7 @@
               </div>
             </section>
             <section class="services__element element">
-              <img class="element__picture" src="assets/Bulb.png" alt="bulb"/>
+              <img class="element__picture" src="src/assets/Bulb.png" alt="bulb"/>
               <div class="element__info element-content">
                 <div class="element-content__title">Inovative Ideas</div>
                 <div class="element-content__info"> Quisque luctus, quam eget molestie com- modo,
@@ -49,7 +52,7 @@
               </div>
             </section>
             <section class="services__element element">
-              <img class="element__picture" src="assets/Heart.png" alt="heart"/>
+              <img class="element__picture" src="src/assets/Heart.png" alt="heart"/>
               <div class="element__info element-content">
                 <div class="element-content__title">Love Is The Answer</div>
                 <div class="element-content__info">Nulla sed nunc et tortor luctus faucibus.
@@ -57,7 +60,7 @@
               </div>
             </section>         
             <section class="services__element element">
-              <img class="element__picture" src="assets/Phone.png" alt="phone"/>
+              <img class="element__picture" src="src/assets/Phone.png" alt="phone"/>
               <div class="element__info element-content">
                 <div class="element-content__title">Responsive Layout</div>
                 <div class="element-content__info">Sed porttitor placerat rhoncus. In at nunc tellus.
@@ -65,7 +68,7 @@
               </div>
             </section>          
             <section class="services__element element">
-              <img class="element__picture" src="assets/Bubble.png" alt="bubble"/>
+              <img class="element__picture" src="src/assets/Bubble.png" alt="bubble"/>
               <div class="element__info element-content">
                 <div class="element-content__title">24 / 7 Support</div>
                 <div class="element-content__info"> Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
@@ -73,7 +76,7 @@
               </div>
             </section>  
               <section class="services__element element">
-                <img class="element__picture" src="assets/Star.png" alt="star"/>
+                <img class="element__picture" src="src/assets/Star.png" alt="star"/>
                 <div class="element__info element-content">
                   <div class="element-content__title">Feel Like A Star</div>
                   <div class="element-content__info">Quisque hendrerit purus dapibus, ornare nibh vitae,
@@ -82,7 +85,7 @@
               </section>  
           </div>        
         </article> 
-        <section class="page__portfolio portfolio" >
+        <section class="page__portfolio portfolio" id="portfolio">
           <h1 class="portfolio__title">Portfolio</h1>
           <p class="portfolio__summary">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           <nav class="portfolio__filter filter">
@@ -94,28 +97,28 @@
            </ul>
           </nav>
           <section class="portfolio__collection collection">
-            <img src="assets/portfolio_pics/pic_1.jpg" alt="picture 1" class="collection_element">
-            <img src="assets/portfolio_pics/pic_2.jpg" alt="picture 2" class="collection_element">
-            <img src="assets/portfolio_pics/pic_3.jpg" alt="picture 3" class="collection_element">
-            <img src="assets/portfolio_pics/pic_4.jpg" alt="picture 4" class="collection_element">
-            <img src="assets/portfolio_pics/pic_5.jpg" alt="picture 5" class="collection_element">
-            <img src="assets/portfolio_pics/pic_6.jpg" alt="picture 6" class="collection_element">
-            <img src="assets/portfolio_pics/pic_7.jpg" alt="picture 7" class="collection_element">
-            <img src="assets/portfolio_pics/pic_8.jpg" alt="picture 8" class="collection_element">
-            <img src="assets/portfolio_pics/pic_9.jpg" alt="picture 9" class="collection_element">
-            <img src="assets/portfolio_pics/pic_10.jpg" alt="picture 10" class="collection_element">
-            <img src="assets/portfolio_pics/pic_11.jpg" alt="picture 11" class="collection_element">
-            <img src="assets/portfolio_pics/pic_12.jpg" alt="picture 12" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_1.jpg" alt="picture 1" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_2.jpg" alt="picture 2" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_3.jpg" alt="picture 3" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_4.jpg" alt="picture 4" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_5.jpg" alt="picture 5" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_6.jpg" alt="picture 6" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_7.jpg" alt="picture 7" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_8.jpg" alt="picture 8" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_9.jpg" alt="picture 9" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_10.jpg" alt="picture 10" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_11.jpg" alt="picture 11" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_12.jpg" alt="picture 12" class="collection_element">
           </section> 
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h1 class="about__title">About Us</h1>
         <p class="about__summary">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
           Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="about__contributors contributors">
           <div class="contributors__contributor contributor">
-            <img src="assets/contributor_pics/contributor_1.jpg" alt="photo 1" class="contributor__photo">
+            <img src="src/assets/contributor_pics/contributor_1.jpg" alt="photo 1" class="contributor__photo">
             <div class="contributor__info info">
               <h3 class="info__name">Adam Jensen</h3>
               <p class="info__description"><span class ="nowrap">Quisque luctus, quam eget molestie commodo,
@@ -129,7 +132,7 @@
             </div>
           </div>
           <div class="contributors__contributor contributor">
-            <img src="assets/contributor_pics/contributor_2.jpg" alt="photo 2" class="contributor__photo">
+            <img src="src/assets/contributor_pics/contributor_2.jpg" alt="photo 2" class="contributor__photo">
             <div class="contributor__info info">
               <h3 class="info__name">Desmond Miles</h3>
               <p class="info__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
@@ -143,7 +146,7 @@
             </div>
           </div>
           <div class="contributors__contributor contributor">
-            <img src="assets/contributor_pics/contributor_3.jpg" alt="photo 3" class="contributor__photo">
+            <img src="src/assets/contributor_pics/contributor_3.jpg" alt="photo 3" class="contributor__photo">
             <div class="contributor__info info">
               <h3 class="info__name">Scolara Visari</h3>
               <p class="info__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
@@ -179,7 +182,7 @@
             Fusce vitae aliquam tellus. Proin sit amet volutpat libero. 
             Nulla sed nunc et tortor luctus faucibus. 
             Morbi at aliquet turpis,  et consequat felis.</p>
-          <div class="contacts">
+          <div class="contacts" id="contact">
             <div class="contact">
               <span class="contact__icon icon_location"></span>
               <span class="contact__info">Elm St. 14/05 Lost City</span>
@@ -206,5 +209,6 @@
           </div>
         </footer>
       </div>
+      <script src='src/script.js'></script>
   </body>
 </html>

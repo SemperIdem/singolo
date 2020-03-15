@@ -92,7 +92,7 @@ body, html {
     width:16px;
     height: 27px;
     color:#c94549;
-    background-image: url('assets/chev.png');
+    background-image: url('src/assets/chev.png');
     background-repeat: no-repeat;
 }
 
@@ -204,28 +204,28 @@ li:not(:first-child):before {
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Regular.ttf") format("truetype");
+  src: url("src/assets/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Bold.ttf") format("truetype");
+  src: url("src/assets/Lato-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Black.ttf") format("truetype");
+  src: url("src/assets/Lato-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Light.ttf") format("truetype");
+  src: url("src/assets/Lato-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }

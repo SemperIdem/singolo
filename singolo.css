@@ -5,6 +5,12 @@
   margin: 0;
 }
 
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .page {
   position: relative;
   margin: 0 auto;
@@ -51,36 +57,44 @@
   height: 600px;
   background: #f06c64;
   border-bottom: #ea676b 6px solid;
-}
+} 
 
 .slider__content {
-  height: 100%;
+  display: none;
 }
+
+.slider__content_current {
+  height: inherit;
+  display: flex;
+}
+
+
 
 .iphone_vertical {
   position: absolute;
-  left: -68px;
-  top: 96px;
+  left: 111px;
+  top: 150px;
 }
 
 .iphone_horizontal {
   position: absolute;
-  left: 360px;
-  top: 163px;
+  left: 424px;
+  top: 272px;
 }
 
-.menu__item {
+.menu-link {
   color: white;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 
-.menu__item_active {
+.menu-link_active {
   color: #f06c64;
 }
 
-.menu__item:hover {
+.menu-link:hover {
   opacity: 0.5;
   cursor: pointer;
 }
@@ -100,7 +114,7 @@
     width:16px;
     height: 27px;
     color:#c94549;
-    background-image: url('assets/chev.png');
+    background-image: url('src/assets/chev.png');
     background-repeat: no-repeat;
 }
 
@@ -501,7 +515,7 @@ textarea::placeholder {
   width: 7px;
   height: 11px;
   margin: 0 12px 0 6px;
-  background-image: url(assets/contacts_icons/location.svg);
+  background-image: url(src/assets/contacts_icons/location.svg);
 }
 
 .icon_phone {
@@ -509,14 +523,14 @@ textarea::placeholder {
   height: 11px;
   margin-right: 2px;
   margin: 0 11px 0 3px;
-  background-image: url(assets/contacts_icons/phone.svg);
+  background-image: url(src/assets/contacts_icons/phone.svg);
 }
 
 .icon_mail {
   width: 13px;
   height: 8px;
   margin: 0px 10px 0px 2px;
-  background-image: url(assets/contacts_icons/mail.svg);
+  background-image: url(src/assets/contacts_icons/mail.svg);
 }
 
 
@@ -555,20 +569,20 @@ textarea::placeholder {
 }
 
 .link_facebook {
-  background-image: url("assets/social_media/Facebook.svg");
+  background-image: url("src/assets/social_media/Facebook.svg");
   margin-right: 6px;
 }
 
 .link_google {
-  background-image: url("assets/social_media/Google.svg");
+  background-image: url("src/assets/social_media/Google.svg");
 }
 
 .link_twitter {
-  background-image: url("assets/social_media/Twitter.svg");
+  background-image: url("src/assets/social_media/Twitter.svg");
 }
 
 .link_linkedin {
-  background-image: url("assets/social_media/LinkedIn.svg");
+  background-image: url("src/assets/social_media/LinkedIn.svg");
 }
 
 
@@ -581,28 +595,28 @@ textarea::placeholder {
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Regular.ttf") format("truetype");
+  src: url("src/assets/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Bold.ttf") format("truetype");
+  src: url("src/assets/Lato-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Black.ttf") format("truetype");
+  src: url("src/assets/Lato-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Light.ttf") format("truetype");
+  src: url("src/assets/Lato-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }

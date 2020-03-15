@@ -168,19 +168,19 @@ li {
 }
 
 .link_facebook{
-  background-image: url("assets/social_media/Facebook.svg");
+  background-image: url("src/assets/social_media/Facebook.svg");
 }
 
 .link_google {
-  background-image: url("assets/social_media/Google.svg");
+  background-image: url("src/assets/social_media/Google.svg");
 }
 
 .link_twitter {
-  background-image: url("assets/social_media/Twitter.svg");
+  background-image: url("src/assets/social_media/Twitter.svg");
 }
 
 .link_linkedin {
-  background-image: url("assets/social_media/LinkedIn.svg");
+  background-image: url("src/assets/social_media/LinkedIn.svg");
 }
 
 .link:hover {
@@ -199,28 +199,28 @@ li:hover {
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Regular.ttf") format("truetype");
+  src: url("src/assets/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Bold.ttf") format("truetype");
+  src: url("src/assets/Lato-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Black.ttf") format("truetype");
+  src: url("src/assets/Lato-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/Lato-Light.ttf") format("truetype");
+  src: url("src/assets/Lato-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
