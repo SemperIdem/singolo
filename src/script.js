@@ -2,9 +2,15 @@ window.onload = function() {
   chooseMenuPageHandler();  
   controlSliderButton();
   turnOffPhone();
+  chooseFilterPageHandler();
+  choosePicPageHandler();
+  prevertSubmit();
 }
 
 
+
+
+// NAVIGATION-MENU
 const chooseMenuPageHandler = () => {
   document.querySelector('.header__menu').addEventListener('click', (e) => {
     if (e.target.classList.contains('menu-link')) {
@@ -71,7 +77,7 @@ const controlSliderButton = () => {
 }
 
 
-
+// TURN ON-OFF PHONE SCREEN 
 var currentIndex = 0;
 var verticalScreenOn = true;
 var horizontalScreenOn = true;
@@ -99,11 +105,12 @@ const turnOffPhone = () => {
   document.querySelector('.slider__content_current').addEventListener('click', (e) => {
     if (e.target.classList.contains('iphone_vertical')) {
         turnOffVertical();
-  }
+    }
   else if (e.target.classList.contains('iphone_horizontal')) {
     turnOffHorizontal();
+    } 
+  })
 }
-})
 
 
 const turnOffVertical = () => {
@@ -132,6 +139,90 @@ const turnOffHorizontal = () => {
   }
 }
 
+//move pics
+
+const chooseFilterPageHandler = () => {
+  document.querySelector('.filter__items').addEventListener('click', (e) => {
+    if (e.target.classList.contains('filter__item')) {
+      let clickedFilterItem = e.target;
+      removeSelectedFilter();
+      selectFilterItem(clickedFilterItem);
+      moveCollectionElement();
+    }
+  })
+}
+
+const removeSelectedFilter = () => {
+  let menuItems = document.querySelectorAll('.filter__item_active');
+  menuItems.forEach(item => {
+    item.classList.remove('filter__item_active');
+  })
+}
+
+const selectFilterItem = (clickedFilterItem) => {
+  clickedFilterItem.classList.add('filter__item_active');
+}
+
+const moveCollectionElement = () => {
+  let collection = document.querySelector('.portfolio__collection')
+  let elements = document.querySelectorAll('.collection__element');
+  console.log(elements);
+  let arr_elements = Array.from(elements);
+  let last = arr_elements[arr_elements.length-1]
+  for (let i = arr_elements.length - 1; i > 0; i--) {
+    arr_elements[i] = arr_elements[i-1]
+  }
+  arr_elements[0] = last;
+  for (item of arr_elements) {
+    collection.appendChild(item);
+  }
+}
 
 
+// choose pic
+const choosePicPageHandler = () => {
+  document.querySelector('.portfolio__collection').addEventListener('click', (e) => {
+    if (e.target.classList.contains('collection__element')) {
+      let clickedPic = e.target;
+      removeBorderedElement();
+      addBorderedElement(clickedPic);
+    }
+  })
+}
+
+
+const removeBorderedElement = () => {
+  document.querySelectorAll('.collection__element_bordered').forEach((e) => {
+    e.classList.remove('collection__element_bordered');
+  })
+}
+
+const addBorderedElement = (clickedPic) => {
+  clickedPic.classList.add('collection__element_bordered');
+}
+
+
+
+//send
+
+const prevertSubmit = () => {
+ let form = document.querySelector('form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let action = 'The letter was sent';
+    let subject, description;
+    if (!form.subject.value.trim() =='') {
+        subject = `Subject: ${form.subject.value}`;
+    }
+    else {
+      subject = 'Without subject';
+    }
+    if (!form.description.value.trim() == '') {
+        description = `Description: ${form.description.value}`;
+    }
+    else {
+      description = 'Without description';
+    }
+    alert(action + '\n' + subject + '\n' + description + '\n' + 'OK');
+ })
 }

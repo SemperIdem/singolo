@@ -269,17 +269,26 @@ li.menu__item:not(:first-child):before {
   height: 187px;
 }
 
+.collection__element_bordered {
+  border: #F06C64 5px solid;
+}
+
 ul.filter__items {
   list-style-type: none;
   display: flex;
   padding: 0;
 }
 
-li.filter__item {
+.filter__item {
   margin-right: 10px;
   border: #666d89 1px solid;
   border-radius: 5px;
   padding: 0 6px;
+}
+
+.filter__item_active {
+  color: #DEDEDE;
+  border-color: #DEDEDE;
 }
 
 .about {

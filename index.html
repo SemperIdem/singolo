@@ -90,25 +90,25 @@
           <p class="portfolio__summary">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           <nav class="portfolio__filter filter">
             <ul class="filter__items">
-              <li class="filter__item">All</li>
+              <li class="filter__item filter__item_active">All</li>
               <li class="filter__item">Web Design</li>
               <li class="filter__item">Graphic Design</li>
               <li class="filter__item">Artwork</li>
            </ul>
           </nav>
           <section class="portfolio__collection collection">
-            <img src="src/assets/portfolio_pics/pic_1.jpg" alt="picture 1" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_2.jpg" alt="picture 2" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_3.jpg" alt="picture 3" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_4.jpg" alt="picture 4" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_5.jpg" alt="picture 5" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_6.jpg" alt="picture 6" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_7.jpg" alt="picture 7" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_8.jpg" alt="picture 8" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_9.jpg" alt="picture 9" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_10.jpg" alt="picture 10" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_11.jpg" alt="picture 11" class="collection_element">
-            <img src="src/assets/portfolio_pics/pic_12.jpg" alt="picture 12" class="collection_element">
+            <img src="src/assets/portfolio_pics/pic_1.jpg" alt="picture 1" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_2.jpg" alt="picture 2" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_3.jpg" alt="picture 3" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_4.jpg" alt="picture 4" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_5.jpg" alt="picture 5" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_6.jpg" alt="picture 6" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_7.jpg" alt="picture 7" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_8.jpg" alt="picture 8" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_9.jpg" alt="picture 9" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_10.jpg" alt="picture 10" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_11.jpg" alt="picture 11" class="collection__element">
+            <img src="src/assets/portfolio_pics/pic_12.jpg" alt="picture 12" class="collection__element">
           </section> 
       </section>
       <section class="about" id="about">
@@ -170,10 +170,10 @@
         </div>
         <section class="feed__main">
           <form class="feed-form" method="post">
-              <input class="feed-form__input" type="text" placeholder="Name (Required)" required>
-              <input class="feed-form__input" type="email" placeholder="Email (Required)" required>
-              <input class="feed-form__input" type="text" placeholder="Subject">
-              <textarea class="feed-form__input feed-form__input_textarea" placeholder="Describe your project in detail..."></textarea>
+              <input class="feed-form__input" type="text" name="name" placeholder="Name (Required)" required>
+              <input class="feed-form__input" type="email" name="email" placeholder="Email (Required)" required>
+              <input class="feed-form__input" type="text" name="subject" placeholder="Subject">
+              <textarea class="feed-form__input feed-form__input_textarea" name="description" placeholder="Describe your project in detail..."></textarea>
               <button class="feed-form__button-send" type="submit">Send</button>
           </form>
         <section class="contact-info">
