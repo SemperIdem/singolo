@@ -657,8 +657,42 @@ textarea::placeholder {
 }
 
 
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background: rgba(0,0,0,0.8);
+  transition: opacity 400ms ease-in;
+  z-index: 9999;
+}
 
+.modal-window_active {
+  display: block;
+  pointer-events: auto;
+}
 
+.modal-window__content {
+  background-color: #c94549;
+  margin: 15% auto;
+  padding: 20px;
+  width: 20%;
+}
+
+.modal-window__button {
+  color: #aaa;
+  cursor: pointer;
+  margin: 1% 45%;
+}
+
+.modal-window__text {
+  color: white;
+  font-weight: 25;
+  text-align: center;
+}
 
 
 

@@ -266,6 +266,15 @@ const prevertSubmit = () => {
     else {
       description = 'Without description';
     }
-    alert(action + '\n' + subject + '\n' + description + '\n' + 'OK');
+    let modal = document.querySelector('.modal-window');
+    let modalButton = document.querySelector('.modal-window__button');
+    let windowText = document.querySelector('.modal-window__text');
+    modal.classList.add('modal-window_active');
+    windowText.innerHTML = (action + '<br>' + subject + '<br>' + description);
+    modalButton.addEventListener('click', () => {
+      console.log('test');
+      modal.classList.remove('modal-window_active');
+      form.reset();
+    })
  })
 }
