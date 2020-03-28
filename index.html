@@ -6,23 +6,23 @@
       <link rel="stylesheet" href="singolo.css">
   </head>
   <body>
-    <div class="page" id="home">
+    <div class="page">
       <header class='page__header header'>
           <h1 class="header__title header__title_uppercase">Singolo<span class="header__title_star">*</span></h1>
           <ul class="header__menu menu">
-            <li class="menu__item"><a class="menu-link menu-link_active" href="#home">HOME</a></li>
-            <li class="menu__item"><a class="menu-link" href="#services">SERVICES</a></li>
-            <li class="menu__item"><a class="menu-link" href="#portfolio">PORTFOLIO</a></li>
-            <li class="menu__item"><a class="menu-link" href="#about">ABOUT</a></li>
-            <li class="menu__item"><a class="menu-link" href="#contact">CONTACT</a></li>
+            <li class="menu__item"><a class="menu-link menu-link_active">HOME</a></li>
+            <li class="menu__item"><a class="menu-link">SERVICES</a></li>
+            <li class="menu__item"><a class="menu-link">PORTFOLIO</a></li>
+            <li class="menu__item"><a class="menu-link">ABOUT</a></li>
+            <li class="menu__item"><a class="menu-link">CONTACT</a></li>
           </ul>
         </header>
-        <div class="page__slider slider">
-          <div class="slider__content slider__content_current">
+        <div class="page__slider slider" id="slider">
+          <div class="slider__content slider__content_first slider__content_current">
             <img src="src/assets/iPhone Vertical.png" alt="iphone" class="iphone_vertical">
             <img src="src/assets/iPhone Horizontal.png" alt="iphone" class="iphone_horizontal">
           </div>
-          <div class="slider__content">
+          <div class="slider__content slider__content_second">
             <img src="src/assets/slider_second.jpg" alt="iphone">
           </div>
           <div class="slider__control slider__control_prev"></div>
@@ -161,7 +161,7 @@
           </div>
             </div>
       </section>   
-      <section class="page__feed feed">
+      <section class="page__feed feed" id="contacts">
         <div class="feed-header">
           <h1 class="feed-header__title">Get a Quote</h1>
           <p class="feed-header__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 

@@ -18,7 +18,35 @@ const chooseMenuPageHandler = () => {
       let clickedMenuItem = e.target;
       removeSelectedItems();
       selectMenuItem(clickedMenuItem);
+      const select = clickedMenuItem.innerHTML;
+      switch(select) {
+        case 'HOME': {
+          slider.scrollIntoView({behavior: "smooth"});
+          break;
+        }
+        case 'SERVICES': {
+          window.scrollTo({top: services.offsetTop - 95, behavior: "smooth"});
+          console.log('mmm');
+          break;
+       }
+        case 'PORTFOLIO': {
+        window.scrollTo({top: portfolio.offsetTop - 95, behavior: "smooth"});
+        console.log('mmm');
+        break;
+       }
+        case 'ABOUT': {
+        window.scrollTo({top: about.offsetTop - 95, behavior: "smooth"});
+        break;
+      }
+        case 'CONTACT': {
+        window.scrollTo({top: contact.offsetTop - 95, behavior: "smooth"});
+        break;
+      }
+    default: {
+      window.scrollTo({top: 0, behavior: "smooth"});
+  }
     }
+  }
   })
 }
 
@@ -35,50 +63,65 @@ const selectMenuItem = (clickedMenuItem) => {
 
 
 /// slider
+let currentIndex = 0;
+let isEnabled = true;
+let slides =  document.querySelectorAll('.slider__content');
 
-
-const nextSlide = () => {
-  let slides =  document.querySelectorAll('.page__slider .slider__content')
-  if (currentIndex != slides.length-1) {
-    slides[currentIndex].classList.remove('slider__content_current');
-    currentIndex+=1;
-    slides[currentIndex].classList.add('slider__content_current');
-  }
-  else {
-    slides[currentIndex].classList.remove('slider__content_current');
-    currentIndex = 0;
-    slides[currentIndex].classList.add('slider__content_current');
-  }
+const changeCurrentSlide = (index) => {
+  currentIndex = (index + slides.length) % slides.length;
 }
 
-const prevSlide = () => {
-  let slides =  document.querySelectorAll('.page__slider .slider__content')
-  if (currentIndex != 0) {
-    slides[currentIndex].classList.remove('slider__content_current');
-    currentIndex-=1;
-    slides[currentIndex].classList.add('slider__content_current');
-  }
-  else {
-    slides[currentIndex].classList.remove('slider__content_current');
-    currentIndex = slides.length-1;
-    slides[currentIndex].classList.add('slider__content_current');
-  }
+const hideSlide = (direction) => {
+  const slide = slides[currentIndex];
+  isEnabled = false;
+  slide.classList.add(direction);
+  slide.addEventListener('animationend', function() {
+    console.log('hideESlide');
+    this.classList.remove('slider__content_current', direction);
+  })
+}
+
+const showSlide = (direction) => {
+  const slide = slides[currentIndex];
+  slide.classList.add('slider__content_next', direction);
+  slide.addEventListener('animationend', function() {
+    console.log('showWSlide');
+    this.classList.remove('slider__content_next', direction);
+    this.classList.add('slider__content_current');
+    isEnabled = true;
+  })
+
+}
+
+const nextSlide = (index) => {
+  hideSlide('to-left');
+  changeCurrentSlide(index + 1);
+  showSlide('from-right')
+}
+
+const prevSlide = (index) => {
+  hideSlide('to-right');
+  changeCurrentSlide(index - 1);
+  showSlide('from-left')
 }
 
 const controlSliderButton = () => {
   document.querySelector('.page__slider').addEventListener('click', (e) => {
       if (e.target.classList.contains('slider__control_next')) {
-        nextSlide();
+        if (isEnabled) {
+        nextSlide(currentIndex);
+        }
       }
       else if(e.target.classList.contains('slider__control_prev')) {
-        prevSlide();
+        if (isEnabled) {
+        prevSlide(currentIndex);
+        }
       }
   })
 }
 
 
 // TURN ON-OFF PHONE SCREEN 
-var currentIndex = 0;
 var verticalScreenOn = true;
 var horizontalScreenOn = true;
 
