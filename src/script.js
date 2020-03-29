@@ -144,6 +144,7 @@ slider__content.appendChild(horizontalScreen);
 
 
 
+
 const turnOffPhone = () => {
   document.querySelector('.slider__content_current').addEventListener('click', (e) => {
     if (e.target.classList.contains('iphone_vertical')) {
@@ -157,30 +158,25 @@ const turnOffPhone = () => {
 
 
 const turnOffVertical = () => {
-  if (verticalScreenOn ) {
-    console.log("off");
-    verticalScreen.style.display = 'block';
-    verticalScreenOn = false;
+  let verticalScreen = document.querySelector('.slider__black-screen');
+  if (verticalScreen.classList.contains('slider__black-screen_active') ) {
+    verticalScreen.classList.remove('slider__black-screen_active');
   }
   else {
-    console.log("on");
-    verticalScreen.style.display = 'none';
-    verticalScreenOn = true;
+    verticalScreen.classList.add('slider__black-screen_active');
   }
 }
 
 const turnOffHorizontal = () => {
-  if (horizontalScreenOn ) {
-    console.log("off");
-    horizontalScreen.style.display = 'block';
-    horizontalScreenOn = false;
+  let verticalScreen = document.querySelector('.slider__black-screen_horizontal');
+  if (verticalScreen.classList.contains('slider__black-screen_active') ) {
+    verticalScreen.classList.remove('slider__black-screen_active');
   }
   else {
-    console.log("on");
-    horizontalScreen.style.display = 'none';
-    horizontalScreenOn = true;
+    verticalScreen.classList.add('slider__black-screen_active');
   }
 }
+
 
 //move pics
 
