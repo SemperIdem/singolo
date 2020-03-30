@@ -257,6 +257,10 @@ a {
     width: 144px;
     top: 187px;
   }
+
+  .menu {
+    margin-right: 27px;
+  }
 }
 
 
@@ -410,8 +414,8 @@ li.menu__item:not(:first-child):before {
 }
 
 .collection__element {
-  width: 220px;
-  height: 187px;
+  width: 100%;
+  height: auto;
 }
 
 .collection__element_bordered {
@@ -439,7 +443,7 @@ ul.filter__items {
 .about {
   background-color: #f2f2f2;
   border-bottom: 6px white solid;
-  padding: 68px 38px 69px 41px;
+  padding: 68px 38px 61px 41px;
 }
 
 .about__title {
@@ -462,12 +466,13 @@ ul.filter__items {
 .about__contributors {
   display: flex;
   flex-direction: row;
-  width: 100%;
 }
 
 .contributors__contributor {
   display: flex;
   flex-direction: column;
+  width: 33%;
+  height: auto;
   margin-right: 20px;
 }
 
@@ -495,7 +500,7 @@ ul.filter__items {
   line-height: 22px;
   color: #767e9e;
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: 12px;
   margin-left: -1px;
   text-align: justify;
 
@@ -520,7 +525,7 @@ li.filter__item:hover {
 @media screen and (min-width: 768px) and (max-width: 1019px) {
 
   .portfolio {
-    padding: 66px 40px 66px 38px;
+    padding: 68px 9px 67px 35px;;
   }
 
   .portfolio__title {
@@ -534,26 +539,51 @@ li.filter__item:hover {
   }
   
   .portfolio__filter {
-    margin: 17px 4px 26px 0;
+    margin: 17px 4px 26px 5px;;
   }
 
   .portfolio__collection {
     grid-template-rows: repeat(4, 187px);
     grid-template-columns: repeat(3, 220px);
+    max-height: 792px;
     grid-gap: 17px 16px;
   }
 
   .about {
-    padding: 58px 0px 9px 38px;
-    width: 100%;
+    padding: 63px 11px 66px 41px;
   }
 
-  .about__contributors {
-    flex-wrap: nowrap;
-  }
+
+  .contributors__contributor {
+    margin-right: 12px;
+}
 
   .contributor__photo {
     width: 100%;
+    height: auto;
+  }
+
+  .about__title {
+    margin-bottom: 25px;
+  }
+
+  .about__summary {
+    margin-bottom: 39px
+  }
+
+  .info__name {
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+
+  .info__description {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+
+  .contributor__links {
+    margin-left: 2px;
+    margin-top: 9px;
   }
 
   
@@ -564,9 +594,9 @@ li.filter__item:hover {
 /* Singolo3 */
 .feed {
   background-color: #f06c64;
-  height: 654px;
+  height: 100%;
   border-bottom: 6px #ea676b solid;
-  padding: 68px 40px;
+  padding: 68px 40px 22px 43px;
 }
 
 .feed__main {
@@ -587,7 +617,6 @@ li.filter__item:hover {
 }
 
 .feed-header__text {
-  height: 57px;
   font-size: 18px;
   line-height: 30px;
   color: #f0d8d9;
@@ -596,10 +625,10 @@ li.filter__item:hover {
 }
 
  .feed-form {
-  width: 620px;
   display: flex;
   flex-direction: column;
   padding-top: 47px;
+  width: 615px;
 } 
 
 .feed-form__input {
@@ -648,9 +677,9 @@ textarea::placeholder {
 .contact-info {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  padding-left: 19px;
-  padding-top: 41px;
+  width: 321px;
+  padding-left: 22px;
+  padding-top: 40px;
 }
 
 .contact-info__title {
@@ -724,8 +753,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 33px 0 40px;
-  height: 76px;
+  padding: 21px 33px 21px 40px;
   background-color: #2d303a;
 }
 
@@ -771,6 +799,44 @@ textarea::placeholder {
   background-image: url("src/assets/social_media/LinkedIn.svg");
 }
 
+@media screen and (min-width: 768px) and (max-width: 1019px) { 
+  
+
+
+  .feed {
+    padding: 68px 40px 17px 41px;;
+  }
+
+  .feed-form {
+    padding: 23px 0px 39px 0px;
+  }
+  .feed-form__input {
+    height: 38px;
+    margin-bottom: 13px;
+  }
+
+  .feed-form__input_textarea {
+    height: 154px;
+  }
+  
+  .contact-info {
+    padding: 17px 0 0 31px;
+  }
+  .contact-info__title { 
+    margin-bottom: 4px;
+  }
+  .contact-info__text {
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  .footer {
+    padding:  21px 20px 21px 40px;
+  }
+
+}
+
+
 
 .modal-window {
   display: none;
@@ -809,10 +875,6 @@ textarea::placeholder {
   text-align: center;
 }
 
-
-@media only screen and (max-width: 1019px) and (min-width: 768px) {
-  
-}
 
 
 
