@@ -1,4 +1,5 @@
 window.onload = function() {
+  showAlertForReviewers();
   chooseMenuPageHandler();  
   controlSliderButton();
   turnOffPhone();
@@ -9,6 +10,10 @@ window.onload = function() {
 
 
 
+
+function showAlertForReviewers() {
+  alert('Уважаемые проверяющие, огромная просьба, отложить проверку RESPONSIVE до 31.03. Спасибо и будьте здоровы :)');
+}
 
 // NAVIGATION-MENU
 const chooseMenuPageHandler = () => {
